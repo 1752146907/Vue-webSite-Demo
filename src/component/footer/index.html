@@ -1,0 +1,114 @@
+<div>
+  <!-- 底部 -->
+  <footer class="footer">
+    <div class="container footer-box">
+      <div class="footer-about">
+        <h2 class="footer-title">关于薇嘉</h2>
+        <div class="footer-item-text">
+          <router-link class="footer-item-text-link" to="/about">
+            品牌介绍
+          </router-link>
+        </div>
+        <div class="footer-item-text">
+          <span class="footer-item-text-link"
+                @click="handleFounder">
+            创始人团队
+          </span>
+        </div>
+        <div class="footer-item-text">
+          <span class="footer-item-text-link"
+                @click="handleHistory">
+            V+Lab历程
+          </span>
+        </div>
+      </div>
+      <div class="footer-server">
+        <h2 class="footer-title">产品与服务</h2>
+        <div class="footer-item-text">
+          <router-link class="footer-item-text-link" to="/vlab">
+            薇嘉系列产品
+          </router-link>
+        </div>
+        <div class="footer-item-text">
+          <router-link class="footer-item-text-link" to="/tale">
+            薇嘉故事
+          </router-link>
+        </div>
+        <div class="footer-item-text">
+          <router-link class="footer-item-text-link" to="/share">
+            分享创业
+          </router-link>
+        </div>
+        <div class="footer-item-text">
+          <router-link class="footer-item-text-link" to="/product/cart">
+            商城购买
+          </router-link>
+        </div>
+        <div class="footer-item-text">
+          <router-link class="footer-item-text-link" to="/antifake">
+            真伪查询
+          </router-link>
+        </div>
+        <div class="footer-item-text">
+          <router-link class="footer-item-text-link" to="/certificate/index">
+            查询授权书
+          </router-link>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <h2 class="footer-title">联系我们</h2>
+        <div class="footer-item-text">00 86 21 61520350</div>
+        <a href="Mailto:vlab_guanfang@vpluslab.com">
+          <div class="footer-item-text">
+            vlab_guanfang@vpluslab.com
+          </div>
+        </a>
+        <div class="footer-item-text">
+          <p>上海市杨浦区政立路500号7号楼创智天地3楼A46室</p>
+        </div>
+      </div>
+      <div class="footer-follow">
+        <h2 class="footer-title">关注我们</h2>
+        <div class="footer-follow-img">
+          <div class="footer-follow-item-img"
+               @click="handleShowMask">
+            <b-img class="footer-follow-img-icon" src="../../../static/image/join-WeChat.png"></b-img>
+            <p class="footer-follow-item-img-text">
+              微信
+            </p>
+          </div>
+          <div class="footer-follow-item-img">
+            <b-img class="footer-follow-img-icon" src="../../../static/image/join-Tmall.png"></b-img>
+            <p class="footer-follow-item-img-text">
+              天猫
+            </p>
+          </div>
+          <div class="footer-follow-item-img">
+            <a target="_blank" href="https://weibo.com/p/1006066330847158/home?from=page_100606&mod=TAB&is_all=1#place">
+              <b-img class="footer-follow-img-icon" src="../../../static/image/join-blog.png"></b-img>
+              <p class="footer-follow-item-img-text">
+                微博
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-copyright">
+        <span class="footer-copyright-text">© 2016-2018 上海星销生物科技有限公司 版权所有 |
+          <a class="footer-copyright-a" href="http://www.miitbeian.gov.cn">沪ICP备18029351号-2</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 弹出层 -->
+  <div class="mask"
+       v-if="isMask"
+       @click="handleHideMask">
+    <div class="mask-bg"></div>
+    <b-img class="mask-img" src="../../../static/image/code.jpg"></b-img>
+  </div>
+</div>
+
